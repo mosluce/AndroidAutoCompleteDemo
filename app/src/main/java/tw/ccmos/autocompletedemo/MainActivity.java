@@ -54,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @OnTextChanged(R.id.queryField)
-    void onTextChanged(CharSequence text) {
+    void onQueryFieldTextChanged(CharSequence text) {
         if (!text.toString().isEmpty()) {
             query(text.toString())
                     .onSuccess(new Continuation<AssetResult, Object>() {
